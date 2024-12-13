@@ -1,3 +1,53 @@
 /* 
     General Styles
 */
+body{
+    background: #272b30;
+}
+img{
+    width: 100px;
+    margin-left: 20px;
+}
+.btn{
+    margin-right: 20px;
+    margin-left: 10px;
+    background: black;
+    color: rgb(243, 188, 86);
+}
+.btn:hover,
+.btn:active,
+.btn:focus {
+    background: black !important;
+    color: rgb(243, 188, 86) !important; 
+    outline: none; 
+    box-shadow: none; 
+}
+.card{
+    background-color: transparent;
+    border: none;
+}
+
+.btn-outline-warning:hover {
+    color: #ffb84d !important; 
+    border-color: #bc822a!important; 
+}
+.fa-heart{
+    color: red;
+}
+.scroll{
+    gap: 150px;
+    max-width: 100%;
+    padding: 10px;
+}
+.scroll::-webkit-scrollbar {
+    height: 8px; 
+}
+.scroll::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 15px; 
+}
+.section{
+    color:rgba(255, 191, 0, 0.882);
+    display: flex;
+    margin-left: 100px;
+}
