@@ -10,8 +10,8 @@ const Card = ({title, text, imgUrl}) => {
           <p className="card-text">{text}</p>
           <button className="btn btn-primary">Learn more!</button>
           <span>
-          <button type="button" class="btn btn-outline-warning">
-          <i class="fa-solid fa-heart"></i>
+          <button type="button" className="btn btn-outline-warning">
+          <i className="fa-solid fa-heart"></i>
           </button>
           </span>
         </div>
