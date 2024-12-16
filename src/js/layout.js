@@ -11,6 +11,7 @@ import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
+import { Details } from "./views/details";
 
 
 //create your first component
@@ -24,7 +25,8 @@ const Layout = () => {
 			<BrowserRouter>
 					<Navbar />
 					<Routes>
-						<Route path="/" element={<Home />} />
+					<Route path="/" element={<Home />} />
+					<Route path="/details/:id" element={<Details />} />
 					</Routes>
 			</BrowserRouter>
 		</div>

@@ -60,3 +60,11 @@ img{
 .planets{
     margin-top: 50px;
 }
+.dropdown-toggle{
+    border-color: #bc822a!important;
+}
+.card-title{
+    color: whitesmoke;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
