@@ -33,13 +33,13 @@ export const Details = () => {
         <hr className="my-4"/>
         <ul>
         <li>
-         Status: {details.status}
+        Status: {details.status}
         </li>
         <li>
-         Species: {details.species}
+        Species: {details.species}
         </li>
         <li>
-         Gender: {details.gender}
+        Gender: {details.gender}
         </li>
         <li>
         Location: {details.location.name}
