@@ -8,7 +8,7 @@ const Card = ({title, imgUrl, id}) => {
         </img>
         <div className="card-body">
           <h5 className="card-title">{title}</h5>
-          <Link to={`/details${id}`}>
+          <Link to={`/details/${id}`}>
           <button className="btn btn-primary">Learn more!</button>
           </Link>
           <span>

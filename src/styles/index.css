@@ -12,13 +12,13 @@ img{
     margin-right: 20px;
     margin-left: 10px;
     background: black;
-    color: rgb(243, 188, 86);
+    color: purple;
 }
 .btn:hover,
 .btn:active,
 .btn:focus {
-    background: black !important;
-    color: rgb(243, 188, 86) !important; 
+    background: #00d8a1 !important;
+    color:  #8a4dff!important; 
     outline: none; 
     box-shadow: none; 
 }
@@ -28,8 +28,8 @@ img{
 }
 
 .btn-outline-warning:hover {
-    color: #ffb84d !important; 
-    border-color: #bc822a!important; 
+    color:  #00d8a1 !important; 
+    border-color:  #00d8a1!important; 
 }
 .fa-heart{
     color: red;
@@ -47,24 +47,23 @@ img{
     border-radius: 15px; 
 }
 .section{
-    color:rgba(255, 191, 0, 0.882);
+    color: #8a4dff;
     display: flex;
     margin-left: 100px;
 }
-.section-2{
-    color:rgba(255, 191, 0, 0.882);
-    display: flex;
-    margin-left: 110px;
-    margin-top: 80px;
-}
-.planets{
-    margin-top: 50px;
-}
 .dropdown-toggle{
-    border-color: #bc822a!important;
+    border-color:  #00d8a1; 
+    color: white!important;
 }
 .card-title{
-    color: whitesmoke;
+    color:#4f9e9f ;
     margin-left: 10px;
     margin-bottom: 15px;
+}
+.jumbotron{
+color: #00d8a1;
+text-align: center;
+}
+ul li{
+    list-style: none;
 }
