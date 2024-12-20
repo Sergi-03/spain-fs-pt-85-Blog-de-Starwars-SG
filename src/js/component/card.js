@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { Context } from "../store/appContext";
 
-const Card = ({title, imgUrl, id}) => {
+const Card = ({title, imgUrl, id,}) => {
+    const {actions} = useContext(Context)
+
     return(
         <div className="card" style={{ width: "18rem"}}>
         <img src={imgUrl} className="card-img-top img-fluid" alt="...">
@@ -13,7 +16,7 @@ const Card = ({title, imgUrl, id}) => {
           </Link>
           <span>
           <button type="button" className="btn btn-outline-warning">
-          <i className="fa-solid fa-heart"></i>
+          <i className="fa-solid fa-heart" onClick={() => actions.addFavorite(title)}></i>
           </button>
           </span>
         </div>

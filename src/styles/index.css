@@ -67,3 +67,10 @@ text-align: center;
 ul li{
     list-style: none;
 }
+.delete-icon{
+    width: 30px;
+    margin-top: -9px;
+}
+.dropdown-menu{
+    background: lightskyblue;
+}
