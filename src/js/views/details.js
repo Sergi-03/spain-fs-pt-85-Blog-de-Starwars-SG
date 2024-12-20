@@ -1,29 +1,21 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { useParams } from "react-router";
 import { useEffect} from "react";
+import { Context } from "../store/appContext";
 
 export const Details = () => {
     const {id} = useParams()
-    const [details, setDetails] = useState(null)
-
-    async function getCharacterDetails() { 
-        try {
-            let response = await fetch(`https://rickandmortyapi.com/api/character/${id}`);
-            let data = await response.json();
-            setDetails(data);  
-        } catch (error) {
-            console.error("Could not fetch data", error);
-            
-        } 
-    }
+    const {store, actions} = useContext(Context)
+    const details = store.characterDetails
 
     useEffect(() => {
-        getCharacterDetails();
-    }, [id]);
+       actions.getCharacterDetails(id)
+    }, [id, actions]); 
 
-    if (!details) {
+    if (!store.characterDetails) {
         return <div>No details available</div>;
     }
+
 
     return (
         <div>

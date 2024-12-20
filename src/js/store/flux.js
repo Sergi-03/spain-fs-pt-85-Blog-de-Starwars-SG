@@ -13,7 +13,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 					initial: "white"
 				}
 			],
-			favorites: []
+			favorites: [],
+			characters: [],
+			characterDetails: null,
 		},
 		actions: {
 			// Use getActions to call a function within a fuction
@@ -38,7 +40,36 @@ const getState = ({ getStore, getActions, setStore }) => {
 
 				//reset the global store
 				setStore({ demo: demo });
-			},
+
+
+			},   
+			
+			getCharacterData: async () => {
+                try {
+                    let response = await fetch("https://rickandmortyapi.com/api/character");
+                    if (response.ok) {
+                        let data = await response.json();
+                        setStore({ characters: data.results });
+                    } else {
+                        console.error("Error fetching characters");
+                    }
+                } catch (error) {
+                    console.error("Could not fetch character data", error);
+                }
+            },
+			 getCharacterDetails: async (id) => {
+                try {
+                    let response = await fetch(`https://rickandmortyapi.com/api/character/${id}`);
+                    if (response.ok) {
+                        let data = await response.json();
+                        setStore({ characterDetails: data });
+                    } else {
+                        console.error("Error fetching character details");
+                    }
+                } catch (error) {
+                    console.error("Could not fetch character details", error);
+                }
+            },
 			addFavorite: (characterName) => {
 				const store = getStore(); 
 
