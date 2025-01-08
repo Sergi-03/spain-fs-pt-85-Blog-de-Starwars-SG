@@ -10,7 +10,7 @@ export const Details = () => {
 
     useEffect(() => {
        actions.getCharacterDetails(id)
-    }, [id, actions]); 
+    }, [id]); 
 
     if (!store.characterDetails) {
         return <div>No details available</div>;
@@ -44,5 +44,3 @@ export const Details = () => {
         </div>
     );
 };
-
-      

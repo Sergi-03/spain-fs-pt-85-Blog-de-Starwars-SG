@@ -6,12 +6,12 @@ import Card from "../component/card";
 import { Context } from "../store/appContext";
 
 export const Home = () => {
-	const [characters, setCharacters] = useState([])
+	
 	const {store, actions} = useContext(Context)
 	
 	useEffect(() => {
 	actions.getCharacterData()
-	},[actions])
+	},[])
 	
 	return (
     <div>
