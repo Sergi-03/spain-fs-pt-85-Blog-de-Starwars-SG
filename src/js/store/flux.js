@@ -14,6 +14,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 				}
 			],
 			favorites: [],
+			favoriteCount: 0,
 			characters: [],
 			characterDetails: null,
 		},
@@ -75,7 +76,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 
 				if (!store.favorites.includes(characterName)) {
 					setStore({
-						favorites: [...store.favorites, characterName]
+						favorites: [...store.favorites, characterName],
+						favoriteCount: store.favoriteCount +1
 					});
 		}
 	},
@@ -84,7 +86,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 		        const updatedFavorites = store.favorites.filter(fav => fav !== characterName);
 		
 		        setStore({
-			    favorites: updatedFavorites
+			    favorites: updatedFavorites,
+				favoriteCount: store.favoriteCount -1
 		});
 }
 		}

@@ -15,6 +15,9 @@ export const Navbar = () => {
 		    <div className="btn-group dropstart">
             <button type="button" className="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
             Favorites
+			<span className="badge bg-light text-dark ms-2">
+            {store.favoriteCount}  
+            </span>
             </button>
             <ul className="dropdown-menu">
 			{store.favorites.map((item, index) =>
