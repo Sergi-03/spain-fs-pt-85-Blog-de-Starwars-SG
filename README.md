@@ -22,17 +22,3 @@ Este proyecto está desarrollado utilizando las siguientes tecnologías:
 - **Gestión de estado**:
   - **React Context API**: Para manejar el estado de la aplicación de manera global.
 
-## Requisitos
-
-Para ejecutar este proyecto, necesitarás tener instalados los siguientes programas en tu máquina:
-
-- **Node.js**: Para ejecutar el servidor y gestionar las dependencias de frontend.
-
-## Instalación
-
-### 1. Clonar el repositorio
-
-Clona el repositorio a tu máquina local:
-
-```bash
-git clone https://github.com/Sergi-03/spain-fs-pt-85-Blog-de-Starwars-SG.git
