@@ -7,7 +7,7 @@ Este es un proyecto de desarrollo de un **blog basado en el universo de Rick and
 ## Características
 
 - **Visualización de artículos**: Accede a una lista de artículos relacionados con el universo de Rick and Morty.
-- **Interacción con usuarios**: Los usuarios pueden agregar comentarios a los artículos.
+- **Interacción con usuarios**: Los usuarios pueden agregar los artículos a una sección de favoritos y eliminarlos.
 - **Estilos dinámicos**: El diseño y estilo de la página responden a las interacciones del usuario.
 
 ## Tecnologías
