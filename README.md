@@ -22,23 +22,22 @@ Este proyecto está desarrollado utilizando las siguientes tecnologías:
 - **Gestión de estado**:
   - **React Context API**: Para manejar el estado de la aplicación de manera global.
  
-  ## Uso
+ ## Uso
 
 ### 1. Clona el repositorio
 ```bash
-git clone https://github.com/Sergi-03/spain-fs-pt-85-Build-a-StarWars-REST-API-SG.git
-cd spain-fs-pt-85-Build-a-StarWars-REST-API-SG
+git clone https://github.com/Sergi-03/spain-fs-pt-85-Blog-de-Starwars-SG.git
+cd spain-fs-pt-85-Blog-de-Starwars-SG
 ```
 
 ### 2. Instala dependencias
 ```bash
-pipenv install
-pipenv shell
+npm install
 ```
 
-### 3. Inicia el servidor
+### 3. Inicia la aplicación
 ```bash
-flask run
+npm run start
 ```
 
 ---
