@@ -37,7 +37,7 @@ npm install
 
 ### 3. Inicia la aplicación
 ```bash
-npm run start
+npm start
 ```
 
 ---
