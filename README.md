@@ -1,6 +1,8 @@
 # Blog de Rick and Morty
 
 ## Descripción
+![brave_screenshot_curly-space-guide-wr9w6p6jpv7g2wjw-3000 app github dev](https://github.com/user-attachments/assets/ff386b20-90c6-482c-84e2-f78ff5b79b79)
+
 
 Este es un proyecto de desarrollo de un **blog basado en el universo de Rick and Morty**. El objetivo de esta aplicación es ofrecer a los usuarios una plataforma interactiva donde pueden ver, agregar y comentar sobre artículos relacionados con la serie.
 
